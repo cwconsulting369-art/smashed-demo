@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SMASHED Augsburg — Design-Entwurf</title>
+<meta name="description" content="Design-Entwurf für SMASHED (Best Smashburger) in Augsburg — Vom Beef zur Legende. Smash Burger, Chicken Burger, Finger Food.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1F140D">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23DC7A2A'/><text y='.72em' x='50%25' text-anchor='middle' font-size='58' fill='%231F140D'>S</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="hdr__in">
+    <a class="logo" href="#top" aria-label="SMASHED — zum Seitenanfang">
+      <img src="assets/img/logo-500.webp" alt="" width="34" height="34">
+      <b>Smashed</b>
+    </a>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <a href="#unsere-burger">Burger</a>
+      <a href="#sides">Sides</a>
+      <a href="#deals">Deals</a>
+      <a href="#standort">Standort</a>
+    </nav>
+    <a class="btn" href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">Bestellen</a>
+    <button type="button" class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══════════════════════════════ Hero ══════════════════════════════ -->
+<section class="hero">
+  <div class="hero__bg">
+    <img src="assets/img/bg-deutschland-2048.webp" srcset="assets/img/bg-deutschland-500.webp 500w, assets/img/bg-deutschland-2048.webp 2048w" sizes="100vw" alt="Smash Burger von SMASHED, Nahaufnahme" fetchpriority="high" decoding="async" width="2048" height="1365">
+  </div>
+  <div class="wrap hero__in">
+    <div class="hero__badge" id="status">
+      <span class="dot"></span>
+      <span id="status-txt">Öffnungszeiten werden geprüft …</span>
+    </div>
+    <h1>
+      Vom Beef<br>
+      <em>zur Legende.</em>
+    </h1>
+    <p class="hero__lead">
+      Smash Burger &amp; Street Food — frisch, modern und lecker. Egal ob zum Hieressen, Mitnehmen
+      oder Liefern: wir smashen deinen Hunger in Sekunden.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--lg" href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Jetzt bestellen
+      </a>
+      <a class="btn btn--lg btn--ghost" href="https://www.instagram.com/smashed.augsburg/" target="_blank" rel="noopener" style="color:#fff">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @smashed.augsburg
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ Burger ══════════════════════════════ -->
+<section class="sec" id="unsere-burger">
+  <div class="wrap">
+    <div class="sec__head center rise">
+      <p class="eyebrow center">Unsere Burger</p>
+      <h2>Smash Beef &amp; Chicken</h2>
+      <p class="sec__sub">ca. 80g Rindhackfleisch-Patty, doppelt gesmasht, mit Cheddar — oder knuspriges Chicken Filet. Alle Preise zum Mitnehmen.</p>
+    </div>
+
+    <div class="filters rise">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">Alle</button>
+      <button type="button" class="chip" data-filter="beef" aria-pressed="false">Beef Burger</button>
+      <button type="button" class="chip" data-filter="chicken" aria-pressed="false">Chicken Burger</button>
+    </div>
+
+    <div class="grid rise">
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-klassik-500.webp" srcset="assets/img/bg-klassik-500.webp 500w, assets/img/bg-klassik-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Klassik Smashed Burger" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Klassik</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, Klassik-Sauce.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-deutschland-500.webp" srcset="assets/img/bg-deutschland-500.webp 500w, assets/img/bg-deutschland-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Deutschland Smashed Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Deutschland</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, deutsche Note.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-western-500.webp" srcset="assets/img/bg-western-500.webp 500w, assets/img/bg-western-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Western Smashed Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Western</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, Western-Style.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-bacon-500.webp" srcset="assets/img/bg-bacon-500.webp 500w, assets/img/bg-bacon-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Bacon Smashed Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Bacon</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, knuspriger Bacon.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-spicy-500.webp" srcset="assets/img/bg-spicy-500.webp 500w, assets/img/bg-spicy-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Spicy Smashed Burger" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Spicy</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, scharfe Note.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-cheeseburger-500.webp" srcset="assets/img/bg-cheeseburger-500.webp 500w, assets/img/bg-cheeseburger-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Cheeseburger Smashed" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Cheeseburger</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, extra viel Cheddar-Käse.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="beef">
+        <div class="card__media"><span class="tag">Beef</span>
+          <img src="assets/img/bg-plain-500.webp" srcset="assets/img/bg-plain-500.webp 500w, assets/img/bg-plain-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Plain Smashed Burger" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Plain</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Doppel-Patty, Cheddar-Käse, schlicht &amp; gut.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="chicken">
+        <div class="card__media"><span class="tag">Chicken</span>
+          <img src="assets/img/cb-classic-500.webp" srcset="assets/img/cb-classic-500.webp 500w, assets/img/cb-classic-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Chicken Burger" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Chicken Burger</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Knuspriges Chicken Filet, Eisbergsalat &amp; Delight-Sauce.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="chicken">
+        <div class="card__media"><span class="tag">Chicken</span>
+          <img src="assets/img/cb-sweetchili-500.webp" srcset="assets/img/cb-sweetchili-500.webp 500w, assets/img/cb-sweetchili-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Sweet Chili Chicken Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Sweet Chili</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Chicken Filet, Eisbergsalat &amp; Sweet-Chili-Sauce.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="chicken">
+        <div class="card__media"><span class="tag">Chicken</span>
+          <img src="assets/img/cb-spicy-500.webp" srcset="assets/img/cb-spicy-500.webp 500w, assets/img/cb-spicy-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Spicy Chicken Burger" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Spicy Chicken</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Chicken Filet, Eisbergsalat, Jalapeños.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="chicken">
+        <div class="card__media"><span class="tag">Chicken</span>
+          <img src="assets/img/cb-bbq-500.webp" srcset="assets/img/cb-bbq-500.webp 500w, assets/img/cb-bbq-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="BBQ Chicken Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">BBQ Chicken</h3><span class="card__price">9,99&nbsp;€</span></div>
+          <p class="card__desc">Chicken Filet, Röstzwiebeln &amp; BBQ-Sauce.</p>
+        </div>
+      </article>
+      <article class="card" data-cat="chicken">
+        <div class="card__media"><span class="tag">Chicken</span>
+          <img src="assets/img/cb-long-500.webp" srcset="assets/img/cb-long-500.webp 500w, assets/img/cb-long-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Long Chicken Burger" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__name">Long Chicken</h3><span class="card__price">6,99&nbsp;€</span></div>
+          <p class="card__desc">1 Hähnchenfilet-Stück, Eisbergsalat.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ Sides ══════════════════════════════ -->
+<section class="sec sec--dark" id="sides">
+  <div class="wrap">
+    <div class="sec__head center rise">
+      <p class="eyebrow center">Finger Food &amp; Drinks</p>
+      <h2>Sides zum Dazubestellen</h2>
+    </div>
+    <div class="grid rise">
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-fries-500.webp" srcset="assets/img/ff-fries-500.webp 500w, assets/img/ff-fries-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Pommes Frites" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Fries</h3><span class="card__price">3,99&nbsp;€</span></div><p class="card__desc">Ca. 200g Pommes.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-loaded-500.webp" srcset="assets/img/ff-loaded-500.webp 500w, assets/img/ff-loaded-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Loaded Pommes" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Loaded Pommes</h3><span class="card__price">5,99&nbsp;€</span></div><p class="card__desc">Pommes, Cheesy Soße, Jalapeños.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-chilicheese-500.webp" srcset="assets/img/ff-chilicheese-500.webp 500w, assets/img/ff-chilicheese-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Chili Cheese Nuggets" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Chili Cheese Nuggets</h3><span class="card__price">ab 4,99&nbsp;€</span></div><p class="card__desc">Würzig-käsige Nuggets.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-mozzarella-500.webp" srcset="assets/img/ff-mozzarella-500.webp 500w, assets/img/ff-mozzarella-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Mozzarella Sticks" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Mozzarella Sticks</h3><span class="card__price">ab 5,99&nbsp;€</span></div><p class="card__desc">Knusprig gebackener Mozzarella.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-onionrings-500.webp" srcset="assets/img/ff-onionrings-500.webp 500w, assets/img/ff-onionrings-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Onion Rings" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Onion Rings</h3><span class="card__price">ab 4,99&nbsp;€</span></div><p class="card__desc">Knusprige Zwiebelringe.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-wings-500.webp" srcset="assets/img/ff-wings-500.webp 500w, assets/img/ff-wings-2048.webp 2048w" sizes="(max-width: 640px) 45vw, 300px" alt="Chicken Wings" loading="lazy" decoding="async" width="2048" height="1365"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Chicken Wings</h3><span class="card__price">ab 6,49&nbsp;€</span></div><p class="card__desc">6 oder 9 Stück, crispy, spicy oder smoky.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media"><img src="assets/img/ff-nuggets-500.webp" srcset="assets/img/ff-nuggets-500.webp 500w, assets/img/ff-nuggets-1000.webp 1000w" sizes="(max-width: 640px) 45vw, 300px" alt="Chicken Nuggets" loading="lazy" decoding="async" width="1000" height="667"></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Chicken Nuggets</h3><span class="card__price">ab 5,49&nbsp;€</span></div><p class="card__desc">6 oder 9 knusprige Nuggets.</p></div>
+      </article>
+      <article class="card">
+        <div class="card__media card__media--type"><span class="card__mono">D</span></div>
+        <div class="card__body"><div class="card__top"><h3 class="card__name">Drinks</h3><span class="card__price">ab 2,49&nbsp;€</span></div><p class="card__desc">Cola, Cola Zero, Wasser, Apfelschorle, Eistee Pfirsich, Orange, Cranberries, Zitrone.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ Deals ══════════════════════════════ -->
+<section class="sec" id="deals">
+  <div class="wrap">
+    <div class="sec__head center rise">
+      <p class="eyebrow center">Deals</p>
+      <h2>Mehr für deinen Hunger</h2>
+      <p class="sec__sub">Alle Deals inkl. Fries &amp; Getränk — komplette Auswahl im Bestellsystem.</p>
+    </div>
+    <div class="deals rise">
+      <a class="deal" href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">
+        <img src="assets/img/deal-jumbo-500.webp" srcset="assets/img/deal-jumbo-500.webp 500w, assets/img/deal-jumbo-2048.webp 2048w" sizes="(max-width: 980px) 92vw, 46vw" alt="JUMBO Burger Deal: 2 Burger nach Wahl, Fries, Getränk" loading="lazy" decoding="async" width="2048" height="1365">
+        <div class="deal__over"><b>Jumbo Burger Deal</b><span>ab 21,99&nbsp;€ — 2 Burger + Fries + Drink</span></div>
+      </a>
+      <a class="deal" href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">
+        <img src="assets/img/deal-smashed-500.webp" srcset="assets/img/deal-smashed-500.webp 500w, assets/img/deal-smashed-1000.webp 1000w" sizes="(max-width: 980px) 92vw, 46vw" alt="Smashed Burger Deal: Burger, Fries, Getränk" loading="lazy" decoding="async" width="1000" height="667">
+        <div class="deal__over"><b>Smashed Burger Deal</b><span>ab 14,49&nbsp;€ — 1 Burger + Fries + Drink</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ Standort ══════════════════════════════ -->
+<section class="sec sec--dark" id="standort">
+  <div class="wrap">
+    <div class="sec__head rise">
+      <p class="eyebrow">Standort</p>
+      <h2>Wir freuen uns auf dich</h2>
+    </div>
+    <div class="contact rise">
+      <div>
+        <ul class="hours">
+          <li><span>Täglich</span><b>12:00 – 22:00</b></li>
+        </ul>
+        <ul class="cinfo">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=Lauterlech+15+86152+Augsburg" target="_blank" rel="noopener">Lauterlech 15, 86152 Augsburg</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <div><small>Bestellen</small><a href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">eat.allo.restaurant/restaurant/smashed</a></div>
+          </li>
+        </ul>
+      </div>
+      <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=Lauterlech+15+86152+Augsburg" target="_blank" rel="noopener">
+        <div class="map-card__cta">
+          <b>Lauterlech 15</b>
+          <span>86152 Augsburg — Route öffnen →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div>
+        <div class="ft__logo">Smashed</div>
+        <p>Vom Beef zur Legende.<br>Smash Burger &amp; Street Food in Augsburg.</p>
+        <div class="ft__social">
+          <a href="https://www.instagram.com/smashed.augsburg/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@smashed.augsburg" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Entdecken</h4>
+        <ul>
+          <li><a href="#unsere-burger">Burger</a></li>
+          <li><a href="#sides">Sides</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#standort">Standort</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Lauterlech+15+86152+Augsburg" target="_blank" rel="noopener">Lauterlech 15<br>86152 Augsburg</a></li>
+          <li><a href="https://eat.allo.restaurant/restaurant/smashed" target="_blank" rel="noopener">Online bestellen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft__btm">
+      <span>© <span id="year">2026</span> Smashed / Inh. Saad Toma — Design-Entwurf, keine offizielle Website</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="pitch">
+  <span>🎨 Design-Entwurf von <b>AEVUM</b> für Smashed — unverbindlicher Vorschlag, keine offizielle Website</span>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
