@@ -56,7 +56,7 @@ a { color: inherit; }
 .wrap { width: min(1200px, 92vw); margin-inline: auto; }
 .wrap-narrow { width: min(760px, 92vw); margin-inline: auto; }
 
-h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1.05; margin: 0; letter-spacing: -.01em; }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1.05; margin: 0; letter-spacing: -.01em; overflow-wrap: break-word; hyphens: auto; }
 p { margin: 0 0 1em; }
 
 .eyebrow {
@@ -200,7 +200,7 @@ p { margin: 0 0 1em; }
 .card__mono { font-family: var(--display); font-size: 2.4rem; font-weight: 900; color: var(--ink-2); opacity: .32; }
 .card__body { padding: var(--s4) var(--s4) var(--s6); display: flex; flex-direction: column; flex: 1; }
 .card__top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s3); margin-bottom: 5px; }
-.card__name { font-family: var(--display); font-size: var(--t-lg); font-weight: 800; line-height: 1.15; text-transform: uppercase; }
+.card__name { font-family: var(--display); font-size: var(--t-lg); font-weight: 800; line-height: 1.15; text-transform: uppercase; color: var(--ink-2); }
 .card__price {
   font-family: var(--display); font-size: var(--t-lg); font-weight: 900; white-space: nowrap; color: var(--red);
   font-variant-numeric: tabular-nums;
@@ -255,6 +255,36 @@ p { margin: 0 0 1em; }
 }
 .pitch b { color: var(--orange); }
 
+/* ============================================================ Angebot (Pitch-Karte) */
+.offer-sec { padding: var(--s16) 0 var(--s20); }
+.offer-card {
+  max-width: 480px; margin-inline: auto; text-align: center;
+  background: var(--ink); color: var(--paper);
+  border: 1px solid rgba(220,122,42,.4); border-radius: var(--r-lg);
+  padding: var(--s8) var(--s6); box-shadow: var(--sh-md);
+}
+.offer-card__label {
+  font-size: var(--t-xs); font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--orange); margin: 0 0 var(--s4);
+}
+.offer-card__title {
+  font-family: var(--display); font-size: var(--t-xl); font-weight: 800; text-transform: uppercase;
+  letter-spacing: -.01em; margin: 0 0 var(--s6);
+}
+.offer-card__title b { color: var(--orange); font-weight: 900; }
+.offer-card__list {
+  list-style: none; margin: 0 0 var(--s6); padding: 0; display: grid; gap: var(--s2);
+  text-align: left; max-width: 340px; margin-inline: auto;
+}
+.offer-card__list li {
+  position: relative; padding-left: 24px; font-size: var(--t-sm); line-height: 1.5;
+  color: rgba(255,248,239,.85);
+}
+.offer-card__list li::before {
+  content: "✓"; position: absolute; left: 0; top: 0; color: var(--orange); font-weight: 800;
+}
+.offer-card__note { font-size: var(--t-xs); color: rgba(255,248,239,.5); font-style: italic; margin: 0; }
+
 /* ============================================================ Footer */
 .ft { background: var(--ink); color: rgba(255,248,239,.6); padding: var(--s16) 0 calc(var(--s8) + 56px); font-size: var(--t-sm); }
 .ft__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--s12); margin-bottom: var(--s12); }
@@ -271,6 +301,7 @@ p { margin: 0 0 1em; }
 .ft__social a:hover { background: var(--orange); border-color: var(--orange); color: var(--ink); }
 .ft__social svg { width: 17px; height: 17px; }
 .ft__btm { border-top: 1px solid rgba(255,248,239,.12); padding-top: var(--s6); display: flex; justify-content: space-between; gap: var(--s4); flex-wrap: wrap; font-size: var(--t-xs); }
+.ft__btm a { display: inline-block; padding: 5px 0; }
 
 /* ============================================================ Einblenden */
 .rise { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
