@@ -226,6 +226,16 @@ p { margin: 0 0 1em; }
 .deal__over b { font-family: var(--display); font-size: var(--t-xl); text-transform: uppercase; display: block; }
 .deal__over span { font-size: var(--t-sm); color: var(--orange); font-weight: 800; }
 
+/* ============================================================ Google-Bewertung */
+.reviews { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s6); }
+.reviews__stars { position: relative; display: inline-block; font-size: 1.05rem; letter-spacing: 2px; line-height: 1; }
+.reviews__stars-bg { color: var(--line); }
+.reviews__stars-fg { position: absolute; inset: 0; width: 94%; overflow: hidden; white-space: nowrap; color: var(--orange); }
+.reviews__val { font-weight: 700; color: var(--paper); }
+.reviews__note { font-weight: 400; color: var(--paper-2); font-size: var(--t-sm); margin-left: 6px; opacity: .8; }
+.reviews__link { font-size: var(--t-sm); font-weight: 600; color: var(--orange); text-decoration: underline; text-underline-offset: 3px; }
+.reviews__link:hover { color: var(--orange-dk); }
+
 /* ============================================================ Standort */
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s16); }
 .hours { list-style: none; padding: 0; margin: 0 0 var(--s8); }
